@@ -1,0 +1,141 @@
+
+/* Reset*/
+html, body{
+    padding:0;
+    margin:0;
+    font-family: 'EB Garamond', serif;
+
+}
+img{
+    max-width:100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* ---------------------   */
+.header{
+    background-image: url(background/1.jpg);
+    height: 209px;
+}
+.footer{
+    background-image: url(background/1.jpg);
+    height: 200px;
+    margin-top: 65px;
+}
+.main{
+    justify-content: space-around;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-image: url(background/2.jpg);
+    background-repeat: no-repeat;
+    height: 513px;
+    font-weight: bolder;
+    
+}
+#instructions{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+}
+.score{
+    /* display: none; */
+    text-align: center;
+    justify-content: space-around;
+    font-family: serif;
+    min-height: 240px;
+    font-size: 20px;
+}
+
+.result{
+    margin-top: 61px;
+}
+
+#user-progress{
+    height: 10px;
+    background: green;
+    width: 1%;
+    transition: width 0.3s;
+}
+#cpu-progress{
+    height: 10px;
+    background: red;
+    width: 1%;
+    transition: width 0.3s;
+}
+#reset-btn{
+    display: none;
+    margin-top: 5px;
+}
+.genstart{
+    margin-top: 5px;
+}
+.myButton {
+    /* margin-top: -26px; */
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:32px;
+	border:8px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:5px 46px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+@media screen and (max-width: 763px){
+    .result{
+        margin-top: -25px;
+    }
+    .footer{
+        margin-top: 170px;
+    }
+    .myButton{
+        border: 0px solid #29668f;
+    }
+
+}
+@media screen and (max-width: 689px){
+    .footer{
+        margin-top: 144px;
+    }
+    .main{   
+        background-image:none;
+        height: 360px;
+        
+    }
+    
+}
+@media screen and (max-width: 435px){
+    #instructions{
+        font-size: 20px;
+        padding-bottom: 8px;
+        margin-top: 0px;
+        
+    }
+    /* .myButton{
+        margin-top: 0px;
+    } */
+    .myButton {
+        margin-top: 0px;
+        font-size:15px;
+        padding:3px 46px;
+        
+    }
+}
+
+   

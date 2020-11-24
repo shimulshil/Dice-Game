@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spil</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Dice Spil</h1>
+    </header>
+    <main class="main">
+        <div id="instructions"></div>
+        <div><button id="roll-btn" class="myButton">Spil</button></div>
+        <div><button id="reset-btn" class="myButton genstart">Genstart</button></div>
+        <div id="score" class="score">
+            <!-- <div class="flex"> -->
+
+                <div>
+                    <p>Du fik: <span id="user-result"></span></p>
+                    <p><img id="user-img">   <img id="user-img1"></p>
+                </div>
+
+                <div>
+                    <p>CPU fik: <span id="cpu-result"></span></p>
+                    <p><img id="cpu-img">   <img id="cpu-img1"><br> </p>
+                </div>
+            <!-- </div> -->
+            
+        </div>
+
+        <div class="result">
+            <p id="user-progress1">Din Total:</p>
+            <div id="user-progress"></div>
+
+            <p id="cpu-progress1">CPU Total:</p>
+            <div id="cpu-progress"></div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
